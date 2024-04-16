@@ -1,25 +1,30 @@
-import React, { useState } from "react"
+// import { useState } from "react"
 
-interface counterProps {
-    initialCounter:number
-};
+import { useState } from "react"
 
-const Counter: React.FC<counterProps> =({initialCounter}) =>{
-   const [count ,setCount] = useState<number>(initialCounter);
 
-   const handleIncrement =()=>{
-    setCount(count +1);
-   }
+// const Counter :React.FC= ()=>{
 
-   const handleDecrement =() =>{
-    setCount(count -1);
-   }
-   <div>
-    <h2>Counter application</h2>
-    <p>let see the count:  {count}</p>
-    <button onClick={handleIncrement}>Increment</button>
-    <button onClick={handleDecrement}>Decrement</button>
-   </div>
-}
+//     const [count, setCount] = useState<number>(0); 
 
-export default Counter;
+//     const handleIncrement=()=>{
+//         setCount(pre =>pre+1);
+//     }
+    
+//     const handleDecrement=()=>{
+//         if(count>0){
+//             setCount(pre =>pre-1)
+//         }
+//     }
+//   return (
+//     <>
+//     <h1> counter : {count}</h1>
+//     <button onClick={handleIncrement}>+</button>
+//     <button onClick={handleDecrement}>-</button>
+//     </>
+//   )
+// }
+
+// export default Counter;
+ 
+
